@@ -28,7 +28,7 @@ local options = {
 
     showtabline = 0,
     cursorline = true,
-    cmdheight = 0,
+    cmdheight = 3,
     laststatus = 3,
     number = true,
     relativenumber = true,
