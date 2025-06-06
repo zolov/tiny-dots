@@ -6,6 +6,13 @@ DISABLE_AUTO_TITLE="true"
 
 # ENABLE_CORRECTION="true"
 
+alias vim="nvim"
+alias e="nvim"
+alias zshrc="vim ~/.zshrc"
+alias ll="ls -lFa"
+alias ld="lazydocker"
+alias lg="lazygit"
+
 plugins=(
 git
 sudo
@@ -22,9 +29,3 @@ export LANG=en_US.UTF-8
 export EDITOR="nvim"
 export ARCHFLAGS="-arch $(uname -m)"
 
-alias vim="nvim"
-alias e="nvim"
-alias zshrc="vim ~/.zshrc"
-alias ll="ls -lFa"
-alias ld="lazydocker"
-alias lg="lazygit"

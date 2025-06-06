@@ -28,7 +28,7 @@ local options = {
 
     showtabline = 0,
     cursorline = true,
-    cmdheight = 3,
+    cmdheight = 1,
     laststatus = 3,
     number = true,
     relativenumber = true,
@@ -88,4 +88,3 @@ vim.cmd([[
   set autoread
   au CursorHold * checktime
 ]])
-
