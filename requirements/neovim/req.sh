@@ -21,10 +21,13 @@ sudo apt-get install ninja-build \
 
 
 echo "Creating build directory"
-mkdir ~/build && cd ~/build || exit 1
+mkdir -p ~/build && cd ~/build || exit 1
+pwd
 
 echo "Cloning neovim repository"
 git clone https://github.com/neovim/neovim.git
+
+cd neovim || exit 1
 
 echo "Checking out stable branch"
 git checkout stable
