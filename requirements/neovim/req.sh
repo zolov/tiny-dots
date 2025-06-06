@@ -34,7 +34,7 @@ git checkout stable
 
 echo "Building neovim..."
 make CMAKE_BUILD_TYPE=Release \
-     CMAKE_INSTALL_PREFIX="$NEOVIM_LOCATION" install
+     CMAKE_INSTALL_PREFIX="$NEOVIM_LOCATION" install || exit 1;
 
 echo "Adding neovim to PATH"
 export PATH="$NEOVIM_LOCATION:$PATH"
