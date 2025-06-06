@@ -17,11 +17,11 @@ echo "Installing dependecies for build from source"
 sudo apt-get install ninja-build \
      gettext libtool libtool-bin \
      autoconf automake cmake g++ \
-     pkg-config unzip
+     pkg-config unzip -y
 
 
 echo "Creating build directory"
-mkdir ~/build && cd "$_" || exit 1
+mkdir ~/build && cd ~/build || exit 1
 
 echo "Cloning neovim repository"
 git clone https://github.com/neovim/neovim.git
@@ -35,3 +35,5 @@ make CMAKE_BUILD_TYPE=Release \
 
 echo "Adding neovim to PATH"
 export PATH="$NEOVIM_LOCATION:$PATH"
+
+echo "Make sure that everything is in order by typing :checkhealth inside nvim"
