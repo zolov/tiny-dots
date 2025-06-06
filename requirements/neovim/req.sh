@@ -27,7 +27,7 @@ pwd
 echo "Cloning neovim repository"
 git clone https://github.com/neovim/neovim.git
 
-cd neovim || exit 1
+cd ./neovim || exit 1
 
 echo "Checking out stable branch"
 git checkout stable
